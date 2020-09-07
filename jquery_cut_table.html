@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery_cut_table.js"></script>
+    <style>
+        #tb{
+            border:1px solid #242424;
+        }
+        #tb td{
+            border:1px solid #242424;
+        }
+    </style>
+</head>
+<body>
+    <table id="tb">
+        <tr>
+            <th>name</th>
+            <th>sex</th>
+        </tr>
+        <tr>
+            <td>oliver</td>
+            <td>male</td>
+        </tr>
+        <tr>
+            <td>rose</td>
+            <td>female</td>
+        </tr>
+        <tr>
+            <td>david</td>
+            <td>male</td>
+        </tr>
+        <tr>
+            <td>max</td>
+            <td>male</td>
+        </tr>
+        <tr>
+            <td>bob</td>
+            <td>male</td>
+        </tr>
+        <tr>
+            <td>clark</td>
+            <td>female</td>
+        </tr>
+        <tr>
+            <td>paper</td>
+            <td>male</td>
+        </tr>
+        <tr>
+            <td>water</td>
+            <td>female</td>
+        </tr>
+    </table>
+    <input type="button" value="首页" id="first_page"/>
+    <input type="button" value="上一页" id="parse_page"/>
+    <span id="now_page_num"></span>
+    /
+    <span id="num_page_num"></span>
+    <input type="button" value="下一页" id="next_page"/>
+    <input type="button" value="尾页" id="last_page"/>
+    <input type="text" value="" id="jump_page_num"/>
+    <input type="button" value="跳转" id="jump_page"/>
+</body>
+</html>

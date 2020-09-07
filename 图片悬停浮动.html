@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图片悬停浮动</title>
+</head>
+<style>
+	.box1,.box2{
+		float: left;
+		padding-top: 30px;
+		padding-left: 20px;
+	}
+	.box2{
+		padding-left: 20px;
+		padding-top: 30px;
+	}
+	.img1{
+		height: 500px;
+		
+	}
+	.img1:hover{
+		transform: scale(1.02);
+	}
+	.img2{
+		height: 250px;
+	}
+	.img2:hover{
+		transform: scale(1.02);
+		box-shadow:5px 5px 5px aqua,5px -5px 5px aqua,-5px 5px 5px aqua,-5px -5px 5px aqua;
+	}
+	</style>
+		
+<body>
+	<div class="box1">
+	<li>鼠标悬停浮动</li>
+	<p></p>
+	<img class="img1" src="img/20170809123901_zHTU4.jpg" alt="单纯浮动"/>
+	</div>
+	<div class="box2">
+	<li>鼠标悬停外发光浮动</li>
+	<p></p>
+	<img class="img2" src="img/1551104504257.jpg"/>
+	</div>
+</body>
+</html>

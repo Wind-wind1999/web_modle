@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    #ul{
+        list-style: none;
+        width: 100px;
+        height: auto;
+        display: none;
+        padding-left: 0;
+    }
+
+</style>
+</head>
+<body>
+    <input type="text" id="title" readonly />
+    <input type="button" id="click" value="点击" onclick="Select('title','ul','click');return false;"/>
+    <ul id="ul" style="display: none;">
+        <li>coofe</li>
+        <li>tea</li>
+        <li>coca</li>
+    </ul>
+
+    <script src="./js/ul.js">
+    </script>
+</body>
+</html>

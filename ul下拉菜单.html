@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ul下拉框</title>
+</head>
+<style>
+	body{
+		text-align: center
+	}
+	.ul,.ul2{
+		width: 200px;
+	}
+	.ul2,.ul3{
+		float: left; 
+		padding-left: 10px;
+	}
+	.f_ul{
+		width: 200px;
+		height: 200px;
+		list-style-type: none;/*去除圆点*/
+		margin: 0;
+		padding: 0;
+		border-top-left-radius: 20px;
+		float: left;
+	}
+	.f_ul_li{
+		background: rgba(141,230,228,1.00);
+		height: 50px;
+		line-height: 50px;
+	}
+	.f_ul_li2{
+		background: rgba(141,230,228,1.00);
+		display: none;
+	}
+	.f_ul_li2 ul{
+		list-style: none;
+		background: rgba(141,240,228,1.00);
+		margin: 0;
+		padding: 0;
+	}
+	.f_ul_li2 li{
+		height: 30px;
+		line-height: 30px;			
+	}
+	.f_ul_li:hover{
+		background: rgba(141,210,228,1.00);
+	}
+	.f_ul_li2:hover{
+		display: block;
+	}
+	.f_ul_li:hover + .f_ul_li2{
+		display: block;
+	}
+	.f_ul_li2 li:hover{
+		background: rgba(141,210,228,1.00);
+	}
+	
+	/*------------------------------------------------------*/
+	.f_ul2{
+		width: 200px;
+		height: 200px;
+		list-style-type: none;/*去除圆点*/
+		margin: 0;
+		padding: 0;
+		border-top-left-radius: 20px;
+		float: left;
+	}
+	.f_ul2_li{
+		height: 50px;
+		line-height: 50px;
+	}
+	.f_ul2_li2{
+		background: rgba(141,230,228,1.00);
+		display: none;
+	}
+	.f_ul2_li2 ul{
+		list-style: none;
+		background: rgba(141,240,228,1.00);
+		margin: 0;
+		padding: 0;
+	}
+	.f_ul2_li2 li{
+		height: 30px;
+		line-height: 30px;			
+	}
+	.f_ul2_li2:hover{
+		display: block;
+	}
+	.f_ul2_li:hover + .f_ul2_li2{
+		display: block;
+	}
+	.f_ul2_li2 li:hover{
+		background: rgba(141,220,228,1.00);
+	}
+	.span{
+		width: 100%;
+		height: 100%;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		background-color: rgba(141,230,228,1.00);
+	}
+	.span:hover{
+		background: rgba(141,220,228,1.00);
+	}
+	
+	/*-------------------------边框风格-------------------------*/
+	.f_ul3{
+		width: 200px;
+		height: 200px;
+		list-style-type: none;/*去除圆点*/
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	.f_ul3_li{
+		height: 50px;
+		line-height: 50px;
+	}
+	.f_ul3_li2{
+		display: none;
+	}
+	.f_ul3_li2 ul{
+		list-style: none;
+		#background: rgba(141,240,228,1.00);
+		margin: 0;
+		padding: 0;
+	}
+	.f_ul3_li2 li{
+		height: 30px;
+		line-height: 30px;			
+	}
+	.f_ul3_li2:hover{
+		display: block;
+	}
+	.f_ul3_li:hover + .f_ul3_li2{
+		display: block;
+	}
+	.span2{
+		width: 100%;
+		height: 100%;
+		border: solid 3px;
+		border-bottom: solid 2px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-color: rgba(141,220,228,1.00);
+	}
+	.span2:hover{
+		background: rgba(141,220,228,1.00);
+	}
+	.child{
+		width: 100%;
+		border:0px;
+	}
+	.child_c1,.child_c2{
+		width: 100%;
+		border: solid 3px;
+		border-color: rgba(141,220,228,1.00);
+	}
+	.child_c1{
+		border-bottom: 0px;
+		border-top: 0px;
+	}
+	.child_c1:hover{
+		background: rgba(141,220,228,1.00);
+	}
+	.child_c2{
+		border-top: 0px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+	.child_c2:hover{
+		background: rgba(141,220,228,1.00);
+	}
+	
+	</style>
+<body>
+	<div class="ul">
+	<ul class="f_ul">
+		<li class="f_ul_li"><a>ul悬停下拉菜单</a></li>
+		<li class="f_ul_li2">
+			<ul>
+			<li><a>子选项一</a></li>
+			<li><div class="child_c"><a>子选项二</a></div></li>
+			</ul>
+			</li>
+	</ul>
+	</div>
+	
+	<div class="ul2">
+	<ul class="f_ul2">
+		<li class="f_ul2_li"><div class="span"><a>ul悬停下拉菜单</a></div></li>
+		<li class="f_ul2_li2">
+			<ul>
+			<li><a>子选项一</a></li>
+			<li><a>子选项二</a></li>
+			</ul>
+			</li>
+	</ul>
+	</div>
+	
+	<!--边框风格-->
+	<div class="ul3">
+	<ul class="f_ul3">
+		<li class="f_ul3_li"><div class="span2"><a>ul悬停下拉菜单</a></div></li>
+		<li class="f_ul3_li2">		
+			<ul>
+				<div class="child">
+				<li><div class="child_c1"><a>子选项一</a></div></li>
+				<li><div class="child_c1"><a>子选项二</a></div></li>
+				<li><div class="child_c2"><a>子选项三</a></div></li>
+				</div>
+				</ul>
+			</li>
+	</ul>
+	</div>
+	
+</body>
+</html>
