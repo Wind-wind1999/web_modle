@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="lib/jquery-3.5.1.min.js">
+</script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+      //点击后执行，补足setInterval的前置准备时间
+      function slide(){
+        $("div").animate({left:'300px'},4000);
+        setTimeout(function(){
+            $("div").css("left","-100px");
+            },4000);
+      }
+      slide();
+      setInterval(function(){slide();},4500);
+    });
+});
+</script>
+
+
+<style>
+#box{
+    background-color: antiquewhite;
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+}
+#div{
+    background:#98bf21;
+    height:100px;
+    width:100px;
+    left:-100px;
+    position: relative;
+}
+
+</style>
+</head>
+ 
+<body>
+<button>开始动画</button>
+<p>模拟滚动公告</p>
+<div id="box">
+    <div id="div">
+        模拟公告
+    </div>
+</div>
+
+
+</body>
+</html>
